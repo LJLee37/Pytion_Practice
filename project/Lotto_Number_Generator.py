@@ -1,5 +1,7 @@
 import random
 
+
+#로또 번호 생성 파트
 def lotto_generator():
     lotto_number = []
     while len(lotto_number) != 7:
@@ -8,6 +10,8 @@ def lotto_generator():
             lotto_number.append(new_number)
     return lotto_number
 
+
+#메인 파트
 print("----------로또 번호 생성기 입니다----------")
 temp = input("로또 번호를 생성하시겠습니까? Y/N :")
 while True:
@@ -16,7 +20,7 @@ while True:
         print(Lotto)
         temp = input("다시 생성하시겠습니까? Y/N :")
     elif temp == "N" or temp == "n":
-        print("로또 번호 생성기를 종료합니다.")Y
+        print("로또 번호 생성기를 종료합니다.")
 
         break
     else:
