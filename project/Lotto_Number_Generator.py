@@ -11,14 +11,15 @@ def lotto_generator():
 print("----------로또 번호 생성기 입니다----------")
 temp = input("로또 번호를 생성하시겠습니까? Y/N :")
 while True:
-    if temp == "Y":
+    if temp == "Y" or temp =="y":
         Lotto = lotto_generator()
         print(Lotto)
         temp = input("다시 생성하시겠습니까? Y/N :")
-    elif temp == "N":
-        print("로또 번호 생성기를 종료합니다.")
+    elif temp == "N" or temp == "n":
+        print("로또 번호 생성기를 종료합니다.")Y
+
         break
     else:
         print("잘못된 입력입니다. 다시 시도해 주십시오.")
-        temp = input("로또 번호를 생성하시겠습니까? Y/N :")b
+        temp = input("로또 번호를 생성하시겠습니까? Y/N :")
 
